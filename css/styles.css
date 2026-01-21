@@ -91,7 +91,7 @@ body {
     .section h3 {
       font-size: 1.2em;
       margin-bottom: 8px;
-      font-weight: bold;
+      font-weight: semi-bold;
     }
     .card {
       background: #ffffff;
@@ -112,5 +112,28 @@ body {
       font-size: 0.95em;
       line-height: 1.5;
       color: #000000;
-      font-weight: bold;
+      font-weight: semi-bold;
+    }
+    /* ESTILOS RESPONSIVOS */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        width: 90%;
+      }
+      .left-column, .right-column {
+        width: 100%;
+      }
+      .right-column {
+        padding: 20px;
+      }
+    }
+    /* ESTILOS HABILIDADES */
+    .progress {
+      background-color: #faf9fb;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 25px rgba(155, 45, 214, 0.3);
     }
