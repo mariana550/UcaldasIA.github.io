@@ -144,4 +144,12 @@ body {
       margin-bottom: 5px;
       border-radius: 10px;
       box-shadow: #cc7afb;
+<<<<<<< HEAD
     }
+=======
+
+    }
+    .card {
+  page-break-inside: avoid;
+}
+>>>>>>> 9d7b743e848ccf508ef235ebd3980600c9db55da

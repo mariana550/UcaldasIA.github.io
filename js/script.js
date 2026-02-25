@@ -2,7 +2,7 @@ function downloadPDF(){
     const element = document.querySelector('#pdf-content');
     //console.log(element);
     const otp = {
-        margin:  [10, 5, 15, 5], //[arriba, izquierda, abajo, derecha] en mm
+        margin: 0, //[arriba, izquierda, abajo, derecha] en mm
         filename: 'Hoja_de_vida_Mariana_Villegas.pdf',
         image: { type: 'jpeg', quality: 1 },
         html2canvas:{
@@ -15,6 +15,6 @@ function downloadPDF(){
             format:'a4',
             orientation:'portrait' //Orientación vertical
         }
-    };
+    }
     html2pdf().set(otp).from(element).save();    
 }
