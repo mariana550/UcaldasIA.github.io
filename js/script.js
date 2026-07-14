@@ -4,7 +4,11 @@ function downloadPDF(){
     const otp = {
         margin: 0, //[arriba, izquierda, abajo, derecha] en mm
         filename: 'Hoja_de_vida_Mariana_Villegas.pdf',
-        image: { type: 'jpeg', quality: 1 },
+        image: { 
+            type: 'jpeg', 
+            quality: 1 
+        },
+
         html2canvas:{
             scale: 3,
             useCORS: true,
